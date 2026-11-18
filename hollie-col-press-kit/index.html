@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Press Kit — Hollie Col</title>
+<meta name="description" content="Hollie Col press kit: bio, key stats, music videos, press photos and what's next.">
+<meta property="og:title" content="Hollie Col — Press Kit">
+<meta property="og:description" content="Sydney singer-songwriter. 9M+ Spotify streams, 30M+ YouTube views. New single ‘Flight Risk’ out 11 December.">
+<meta property="og:image" content="assets/photo-window.jpg">
+<link rel="icon" href="assets/felt-pink.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .press-hero { position: relative; height: clamp(440px, 70vh, 700px); overflow: hidden; background: #3A2A1E; }
+  .press-hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+  .press-hero::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, rgba(30,18,10,.6) 0%, rgba(30,18,10,0) 55%), linear-gradient(rgba(30,18,10,.4), rgba(30,18,10,0) 140px); }
+  .press-hero .site-header { position: relative; z-index: 2; }
+  .press-hero .site-header a, .press-hero .site-header a:hover { color: #FBF4DC; }
+  .press-hero .hero-copy { position: absolute; z-index: 2; left: 0; right: 0; bottom: 0; color: #FBF4DC; padding-bottom: 48px; }
+  .press-hero .hero-copy p.eyebrow { color: #F6D9A8; }
+  .press-hero h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(40px, 6vw, 80px); line-height: 1; letter-spacing: .12em; margin: 10px 0 12px; }
+  .press-hero .tagline { font-size: 17px; max-width: 460px; color: #F5EBD2; }
+
+  .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); margin: 56px 0 0; }
+  .stats div { padding: 24px 20px; border-left: 1px solid var(--rule); }
+  .stats div:first-child { border-left: 0; padding-left: 0; }
+  .stats strong { display: block; font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 3.4vw, 44px); line-height: 1; }
+  .stats span { display: block; margin-top: 8px; font-size: 14px; color: var(--ink-soft); }
+  @media (max-width: 760px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } .stats div:nth-child(3) { border-left: 0; padding-left: 0; } .stats div:nth-child(n+3) { border-top: 1px solid var(--rule); } }
+
+  .press-section { padding: 72px 0 0; }
+  .press-section > h2 { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: clamp(28px, 3vw, 38px); line-height: 1; margin-bottom: 28px; }
+  .bio { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+  .bio .prose p { font-size: 16px; color: var(--ink-soft); margin-bottom: 16px; max-width: 640px; }
+  .bio .prose p.lead { font-family: var(--serif); font-size: clamp(20px, 2vw, 24px); line-height: 1.35; color: var(--ink); }
+  .facts { border-top: 1px solid var(--rule); }
+  .facts div { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .facts dt { font-size: 12px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--label); }
+  .facts dd { margin: 4px 0 0; font-size: 15px; }
+  @media (max-width: 860px) { .bio { grid-template-columns: 1fr; } }
+
+  .timeline { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; position: relative; z-index: 3; }
+  .timeline li { padding: 22px 20px 0 0; border-top: 2px solid var(--ink); position: relative; }
+  .timeline li::before { content: ""; position: absolute; left: 0; top: -7px; width: 12px; height: 12px; border-radius: 50%; background: var(--ink); }
+  .timeline .when { font-size: 12px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--rust-dark); }
+  .timeline .what { display: block; font-family: var(--serif); font-size: 21px; line-height: 1.2; margin-top: 6px; }
+  .timeline .note { display: block; font-size: 14px; color: var(--ink-soft); margin-top: 6px; }
+  @media (max-width: 860px) { .timeline { grid-template-columns: 1fr; } .timeline li { border-top: 0; border-left: 2px solid var(--ink); padding: 0 0 24px 22px; } .timeline li::before { left: -7px; top: 4px; } }
+
+  .grid-press-videos { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 28px 24px; }
+  .grid-photos { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+  .grid-photos figure { margin: 0; }
+  .grid-photos img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+  .grid-photos figcaption { display: flex; justify-content: flex-end; gap: 8px; margin-top: 8px; font-size: 14px; }
+  @media (max-width: 860px) { .grid-photos { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+  .live-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 48px; }
+  .live-cols h3 { margin-bottom: 8px; }
+  .live-cols p { font-size: 16px; color: var(--ink-soft); }
+  @media (max-width: 700px) { .live-cols { grid-template-columns: 1fr; } }
+
+  .listen { display: flex; flex-wrap: wrap; gap: 10px; }
+  .contact-block { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px 32px; padding: 64px 32px; position: relative; z-index: 3; }
+  .contact-block h2 { font-size: clamp(26px, 3vw, 36px); line-height: 1.15; }
+  .contact-block p { font-size: 16px; color: var(--ink-soft); margin-top: 8px; }
+  .bio-more summary { display: none; }
+  @media (max-width: 760px) {
+    .bio-more summary { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; cursor: pointer; font-weight: 500; text-decoration: underline; text-underline-offset: 4px; list-style: none; }
+    .bio-more summary::-webkit-details-marker { display: none; }
+    .bio-more summary::after { content: "+"; font-size: 18px; text-decoration: none; }
+    .bio-more[open] summary::after { content: "–"; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<section class="press-hero">
+  <img src="assets/photo-window.jpg" alt="Hollie Col seated at a round timber table by a window, looking up" fetchpriority="high">
+  <div class="hero-copy"><div class="wrap">
+    <p class="eyebrow">Press kit</p>
+    <h1>HOLLIE COL</h1>
+    <p class="tagline">Sydney singer-songwriter making warm, guitar-led pop-folk.</p>
+  </div></div>
+</section>
+
+<main id="main">
+  <div class="wrap">
+
+    <!-- KEY NUMBERS -->
+    <div class="stats" role="list" aria-label="Key numbers">
+      <div role="listitem"><strong>9M+</strong><span>Spotify streams</span></div>
+      <div role="listitem"><strong>30M+</strong><span>YouTube views</span></div>
+      <div role="listitem"><strong>116K</strong><span>YouTube subscribers</span></div>
+      <div role="listitem"><strong>30K</strong><span>Spotify followers</span></div>
+    </div>
+
+    <!-- BIO -->
+    <section class="press-section" aria-labelledby="bio-heading">
+      <h2 id="bio-heading">Bio</h2>
+      <div class="bio">
+        <div class="prose">
+          <p class="lead">Hollie Col is a singer-songwriter from Sydney, Australia, writing warm, guitar-led pop-folk built on storytelling.</p>
+          <p>Releasing music since 2018, she has passed 9 million Spotify streams and 30 million YouTube views, with 116,000 YouTube subscribers and 30,000 Spotify followers. Her catalogue keeps finding new listeners: ‘Let Yourself Down’ has 3.4 million streams and ‘She Knows’ 2.9 million, while recent single ‘Two Step Plan’ has passed 1.3 million YouTube views. Most of her audience is in the United States, across YouTube, Instagram and Spotify.</p>
+          <details class="bio-more" open>
+            <summary>Read full bio</summary>
+          <p>Her songs often explore LGBTQIA+ themes, brought to life in cinematic, self-directed music videos. Her 2022 EP <em>Julia Stevens</em> told a single story across a series of music videos and a short film. She has received triple j airplay across multiple singles, editorial Spotify playlist support, and coverage from Billboard, Tone Deaf and The AU Review. Her production collaborators include Dylan Nash (Dean Lewis, Angus &amp; Julia Stone) and Andy Mak (Vera Blue).</p>
+          <p>Now she returns with <em>Glitter</em>, her most cohesive and personal work yet: Rumours-era layered production, earthy drums and Fleetwood-esque chord progressions through a sharp, contemporary songwriting lens. Its first singles, ‘I’ll Be There’ and ‘The Gambler’, are out now, with ‘Flight Risk’ following on 11 December.</p>
+          </details>
+        </div>
+        <dl class="facts">
+          <div><dt>From</dt><dd>Sydney, Australia</dd></div>
+          <div><dt>Genre</dt><dd>Pop-folk, singer-songwriter</dd></div>
+          <div><dt>For fans of</dt><dd>Fleetwood Mac, Maggie Rogers, HAIM, Taylor Swift</dd></div>
+          <div><dt>Latest</dt><dd>‘I’ll Be There’ and ‘The Gambler’ (2026)</dd></div>
+          <div><dt>Next single</dt><dd>‘Flight Risk’, 11 December 2026</dd></div>
+          <div><dt>Radio and press</dt><dd>triple j, Billboard, Tone Deaf, The AU Review</dd></div>
+        </dl>
+      </div>
+    </section>
+  </div>
+
+  <!-- WHAT'S NEXT (blue, mentions Glitter, so felt dots) -->
+  <section class="on-blue" aria-labelledby="next-heading" style="margin-top: 80px">
+    <img class="felt" src="assets/felt-pink.png" alt="" aria-hidden="true" style="left: calc(4% + 0px); top: 18%; width: 28px; transform: translate(-50%, -50%) rotate(12deg)">
+    <img class="felt" src="assets/felt-sage.png" alt="" aria-hidden="true" style="left: calc(4% + 34px); top: calc(18% + 26px); width: 20px; transform: translate(-50%, -50%) rotate(-20deg)">
+    <img class="felt" src="assets/felt-butter.png" alt="" aria-hidden="true" style="left: calc(4% - 10px); top: calc(18% + 50px); width: 24px; transform: translate(-50%, -50%)">
+    <img class="felt" src="assets/felt-coral.png" alt="" aria-hidden="true" style="left: calc(96% - 20px); top: 12%; width: 26px; transform: translate(-50%, -50%) rotate(30deg)">
+    <img class="felt" src="assets/felt-lilac.png" alt="" aria-hidden="true" style="left: calc(96% + 12px); top: calc(12% + 32px); width: 20px; transform: translate(-50%, -50%)">
+    <img class="felt" src="assets/felt-teal.png" alt="" aria-hidden="true" style="left: calc(96% - 26px); top: calc(12% + 56px); width: 22px; transform: translate(-50%, -50%) rotate(-12deg)">
+    <img class="felt" src="assets/felt-rose.png" alt="" aria-hidden="true" style="left: 52%; top: 93%; width: 22px; transform: translate(-50%, -50%)">
+    <img class="felt" src="assets/felt-butter.png" alt="" aria-hidden="true" style="left: calc(52% + 32px); top: calc(93% - 12px); width: 18px; transform: translate(-50%, -50%)">
+    <div class="wrap" style="padding-top: 64px; padding-bottom: 64px">
+      <h2 id="next-heading" class="serif italic" style="font-size: clamp(28px, 3vw, 38px); line-height: 1; margin-bottom: 40px">What’s next</h2>
+      <ol class="timeline" style="list-style: none; margin: 0; padding: 0">
+        <li><span class="when">11 December 2026</span><span class="what">‘Flight Risk’</span><span class="note">New single from <em>Glitter</em></span></li>
+        <li><span class="when">Early 2027</span><span class="what"><em>Glitter</em> EP</span><span class="note">Out with ‘I’ll Be There’ and ‘The Gambler’</span></li>
+        <li><span class="when">2027</span><span class="what">Australian shows</span><span class="note">Headline dates to be announced</span></li>
+        <li><span class="when">July 2027</span><span class="what">European festivals</span><span class="note">Festival slots planned</span></li>
+        <li><span class="when">Late 2027</span><span class="what">Second EP</span><span class="note">Follow-up to <em>Glitter</em></span></li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <!-- VIDEOS -->
+    <section class="press-section" aria-label="Music videos">
+      <ul class="grid grid-press-videos">
+        <li>
+          <button class="yt" type="button" data-id="O-s5IZjDIa4" aria-label="Play I’ll Be There, official music video"><img src="https://i.ytimg.com/vi/O-s5IZjDIa4/hqdefault.jpg" alt="" width="480" height="360"><span class="play"><svg width="20" height="20" viewBox="0 0 28 28" fill="#2E2016" aria-hidden="true"><path d="M9 6l14 8-14 8z"/></svg></span></button>
+          <div class="video-meta"><span class="serif">I’ll Be There</span><span>Official music video · from <em>Glitter</em>, 2026</span></div>
+        </li>
+        <li>
+          <button class="yt" type="button" data-id="QB47puZ6e0M" aria-label="Play Julia, official music short film"><img src="https://i.ytimg.com/vi/QB47puZ6e0M/hqdefault.jpg" alt="" width="480" height="360"><span class="play"><svg width="20" height="20" viewBox="0 0 28 28" fill="#2E2016" aria-hidden="true"><path d="M9 6l14 8-14 8z"/></svg></span></button>
+          <div class="video-meta"><span class="serif">Julia</span><span>Official music short film · from <em>Julia Stevens</em>, 2022</span></div>
+        </li>
+        <li>
+          <button class="yt" type="button" data-id="wcX5B39OlbQ" aria-label="Play Reruns, official music video"><img src="https://i.ytimg.com/vi/wcX5B39OlbQ/hqdefault.jpg" alt="" width="480" height="360"><span class="play"><svg width="20" height="20" viewBox="0 0 28 28" fill="#2E2016" aria-hidden="true"><path d="M9 6l14 8-14 8z"/></svg></span></button>
+          <div class="video-meta"><span class="serif">Reruns</span><span>Official music video · from <em>Julia Stevens</em>, 2021</span></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- LIVE -->
+    <section class="press-section" aria-labelledby="live-heading">
+      <h2 id="live-heading">Live</h2>
+      <div class="live-cols">
+        <div>
+          <h3 class="sublabel">Headline</h3>
+          <p>Multiple sold-out headline runs across Australia (300 capacity), with an Australian headline tour planned for 2027.</p>
+        </div>
+        <div>
+          <h3 class="sublabel">Europe and UK</h3>
+          <p>A 30-date European and UK support tour with Kim Churchill (2024), plus European and UK dates with Sons of the East and Harrison Storm.</p>
+        </div>
+        <div style="grid-column: 1 / -1">
+          <h3 class="sublabel">Supports in Australia</h3>
+          <p>Kodaline, The Rubens, Dan Sultan, Pete Murray, Sons of the East, Winterbourne and more.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESS PHOTOS -->
+    <section class="press-section" aria-labelledby="photos-heading">
+      <h2 id="photos-heading">Press photos</h2>
+      <ul class="grid grid-photos">
+        <li><figure><img src="assets/photo-window.jpg" alt="Hollie Col press photo 1"><figcaption><a href="assets/press-window.jpg" download>Download</a></figcaption></figure></li>
+        <li><figure><img src="assets/photo-hall.jpg" alt="Hollie Col press photo 2"><figcaption><a href="assets/press-hallway.jpg" download>Download</a></figcaption></figure></li>
+        <li><figure><img src="assets/photo-garden.jpg" alt="Hollie Col press photo 3"><figcaption><a href="assets/press-garden.jpg" download>Download</a></figcaption></figure></li>
+        <li><figure><img src="assets/photo-sofa.jpg" alt="Hollie Col press photo 4"><figcaption><a href="assets/press-sofa.jpg" download>Download</a></figcaption></figure></li>
+      </ul>
+    </section>
+
+    <!-- LISTEN -->
+    <section class="press-section" aria-labelledby="listen-heading" style="padding-bottom: 80px">
+      <h2 id="listen-heading">Listen</h2>
+      <div class="listen">
+        <a class="btn btn-line" href="https://open.spotify.com/artist/4JyT0CxxEic1JhENHbXfR1">Spotify</a>
+        <a class="btn btn-line" href="https://www.youtube.com/@holliecol">YouTube</a>
+        <a class="btn btn-line" href="https://music.apple.com/us/artist/hollie-col/1295588186">Apple Music</a>
+        <a class="btn btn-line" href="https://www.instagram.com/holliecol">Instagram</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="on-blue">
+    <div class="wrap"><div class="contact-block">
+      <div>
+        <h2 class="serif">Get in touch</h2>
+        <p>For bookings, press and support enquiries: <a href="mailto:holliecol@outlook.com">holliecol@outlook.com</a></p>
+      </div>
+      <a class="btn btn-solid" href="mailto:holliecol@outlook.com">Email Hollie</a>
+    </div></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span class="wordmark">HOLLIE COL</span>
+  <ul class="inline-links">
+    <li><a href="https://open.spotify.com/artist/4JyT0CxxEic1JhENHbXfR1">Spotify</a></li>
+    <li><a href="https://music.apple.com/us/artist/hollie-col/1295588186">Apple Music</a></li>
+    <li><a href="https://www.youtube.com/@holliecol">YouTube</a></li>
+    <li><a href="https://www.instagram.com/holliecol">Instagram</a></li>
+    <li><a href="mailto:holliecol@outlook.com">Contact</a></li>
+  </ul>
+  <small>© 2026 Hollie Col</small>
+</footer>
+<script>
+  if (window.matchMedia('(max-width: 760px)').matches) {
+    document.querySelectorAll('.bio-more').forEach(function (d) { d.removeAttribute('open'); });
+  }
+</script>
+<script src="script.js"></script>
+</body>
+</html>
